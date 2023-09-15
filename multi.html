@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 5rem;
+            width: 35rem;
+            background-color: aliceblue;
+            box-shadow: 10px 10px 15px black;
+            margin:30px auto;
+
+        }
+        h1{
+            width: 5rem;
+            height: 2rem;
+            padding-top: 15px;
+            margin:auto;
+        }
+
+        .spin:hover{
+            animation: spin 4s infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes spin{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        .wiggle:hover{
+            animation: wiggle 0.1s infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes wiggle{
+            0%{
+                transform: translate(2px ,0);
+            }
+            50%{
+                transform: translate(-4px ,0);
+            }
+            100%{
+                transform: translate(2px ,0);
+            }
+        }
+        .zoom:hover{
+            height: 7rem;
+            width: 45rem;
+            transition: height 2s ,width 2s;
+        }
+
+        .shake:hover{
+            animation: shake 0.1s infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes shake{
+            0%{
+                transform: rotate(1deg);
+            }
+            50%{
+                transform: rotate(-1deg);
+            }
+            100%{
+                transform: rotate(1deg);
+            }
+        }
+
+        .pulse:hover{
+            animation: pulse 1s infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes pulse{
+            0%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(1.3);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wiggle"><h1>wiggle</h1></div>
+    <div class="zoom"><h1>zoom</h1></div>
+    <div class="spin"><h1>spin</h1></div>
+    <div class="shake"><h1>shake</h1></div>
+    <div class="pulse"><h1>pulse</h1></div>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stroke Text Demo</title>
+<style>
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+  }
+</style>
+</head>
+<body>
+<canvas id="myCanvas" width="400" height="400"></canvas>
+<script>
+  const canvas = document.getElementById('myCanvas');
+  const ctx = canvas.getContext('2d');
+
+  ctx.font = '70px Impact';
+
+  const grad= ctx.createRadialGradient(100,100,20,100,100,100,100)
+  grad.addColorStop(0,'red')
+  grad.addColorStop(1,'yellow')
+  ctx.fillStyle=grad
+  ctx.fillRect(150,150,400,200)
+  ctx.shadowColor=grad
+  ctx.shadowOffsetX=5;
+  ctx.shadowOffsetY=5;
+  ctx.shadowBlur=4;
+ctx.strokeStyle=grad
+  ctx.strokeText('Stroked Text', 30, 100);
+  ctx.stroke()
+</script>
+</body>
+</html>

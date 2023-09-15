@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: red; 
+            animation: move 40s infinite linear;    
+            position: absolute;                                              
+        }
+
+        @keyframes move{
+            0%{
+             left: 100px;
+             top: 100px;
+             background-color: red;   
+            }
+            25%{
+             left: 500px;
+             top: 100px;
+             background-color: rgb(251, 241, 55);   
+            }
+            50%{
+             left: 500px;
+             top: 500px;
+             background-color: rgb(209, 238, 47);   
+            }
+            75%{
+             left: 100px;
+             top: 500px;
+             background-color: rgb(238, 149, 47);   
+            }
+            100%{
+             left: 100px;
+             top: 100px;
+             background-color: red;   
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The transition Property</h1>
+    <p>Hover over the div element below, to see the transition effect:</p>
+    <div></div>
+</body>
+
+</html>

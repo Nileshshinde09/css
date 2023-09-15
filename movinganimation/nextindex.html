@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text Shadow Demo</title>
+<style>
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: red;
+  }
+</style>
+</head>
+<body>
+<canvas id="myCanvas" width="400" height="200"></canvas>
+<script>
+  const canvas = document.getElementById('myCanvas');
+  const ctx = canvas.getContext('2d');
+
+  // Set the text font and size
+  ctx.font = '36px Impact';
+
+  // Create the text shadow
+  ctx.shadowOffsetX = 5;
+  ctx.shadowOffsetY = 5;
+  ctx.shadowBlur = 4;
+  ctx.shadowColor = 'black'; // Shadow color with transparency
+
+  // Set the fill color for the text
+  ctx.fillStyle = 'white';
+
+  // Draw the text with shadow
+  ctx.fillText('Text Shadow Demo', 50, 100);
+</script>
+</body>
+</html>

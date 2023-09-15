@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: lightcoral;
+            animation: alt 5s infinite;
+            animation-timing-function: linear;
+            position: absolute;
+            top:0px;
+            left:0px;
+            border: 2px solid black;
+            box-shadow: 15px  15px  15px black;
+            animation-direction: alternate;
+        }
+
+        @keyframes alt {
+            0% {
+                background-color: lightblue;
+                height: 100px;
+                width: 100px;
+                top:0px;
+                left:0px;
+
+            }
+
+            25% {
+                background-color: lightcyan;
+                height: 100px;
+                width: 100px;
+                top:0px;
+                left:100px;
+
+            }
+
+            50% {
+                background-color: lightgoldenrodyellow;
+                height: 100px;
+                width: 100px;
+                top:100px;
+                left:100px;
+
+            }
+
+            75% {
+                background-color: lightgray;
+                height: 100px;
+                width: 100px;
+                top:100px;
+                left:0px;
+
+            }
+
+            100% {
+                background-color: lightgreen;
+                height: 100px;
+                width: 100px;
+                top:0px;
+                left:0px;
+
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+</body>
+
+</html>

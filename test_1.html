@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+    <canvas id="canva">
+
+    </canvas>
+    <script>
+        const canvas = document.getElementById('canva')
+        const ctx= canvas.getContext("2d")
+        if(ctx){
+            ctx.font='100px Cambria'
+            const grad= ctx.createLinearGradient(10,10,100,100)
+            grad.addColorStop(0,'red')
+            grad.addColorStop(0.5,'orange')
+            grad.addColorStop(0.9,'yellow')
+            grad.addColorStop(0.95,'pink')
+            
+            ctx.shadowBlur=13
+            ctx.shadowOffsetX=12
+            ctx.shadowOffsetY=5
+            ctx.shadowColor=grad
+            ctx.strokeStyle=grad
+            ctx.strokeText("HTML Canvas",10,100)
+            
+        }
+    </script>
+</body>
+</html>

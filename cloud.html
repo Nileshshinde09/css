@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Bouncing Clouds</title>
+    <script src=""></script>
+    <style>
+        .cloud{
+            position: absolute;
+        }
+        body{
+            overflow: hidden;
+            margin: 0;
+        }
+     
+        #mainContent{
+
+            background-color:rgb(119, 166, 237);
+            height: 100%;
+            width:100%;
+            
+        }
+        #bigcloud{
+            margin: 30px;
+            animation: test 2s infinite;
+        }
+        #smallcloud{
+            margin: 50px;
+            animation: test 2.3s infinite ;
+        }
+        @keyframes test{
+            0%{
+                transform: translate3d(50px,50px,0);
+                animation-timing-function: else;
+            }
+            50%{
+                transform: translate3d(50px,150px,0);
+            }
+            100%{
+                transform: translate3d(50px,50px,0);
+                animation-timing-function: else;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainContent">
+        <img id="bigcloud" alt="#" class="cloud" height="154" src="cloud.png" width="238">
+        <img id="smallcloud" alt="#" class="cloud" height="103" src="cloud.png" width="158">
+    </div>
+</body>
+
+</html>
+<!-- 
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Bouncing Clouds</title>
+    <style>
+        .cloud {
+            position: absolute;
+        }
+
+        body {
+            overflow: hidden;
+            margin: 0;
+        }
+
+        #mainContent {
+            background-color: rgb(119, 166, 237);
+            height: 20rem;
+            width: 50rem;
+        }
+
+        #bigcloud {
+            margin: 100px;
+            animation: test 2s infinite ease-in-out;
+        }
+
+        #smallcloud {
+            margin: 100px;
+            animation: test 2s infinite ease-in-out;
+        }
+
+        @keyframes test {
+            0% {
+                transform: translate3d(50px, 50px, 0);
+            }
+
+            50% {
+                transform: translate3d(50px, 70px, 0);
+            }
+
+            100% {
+                transform: translate3d(50px, 50px, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainContent">
+        <img id="bigcloud" alt="#" class="cloud" height="154" src="cloud.png" width="238">
+        <img id="smallcloud" alt="#" class="cloud" height="103" src="cloud.png" width="158">
+    </div>
+</body>
+
+</html> -->

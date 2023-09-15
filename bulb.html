@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const change=()=>{
+            const state = document.getElementById("img1")
+            if(state.src.match("cloud")){
+                state.src="13.jpg"
+            }
+            else{
+                state.src="cloud.png"
+            }
+        }
+    </script>
+</head>
+<body>
+    <img src="cloud.png" onclick="change()" id="img1" height="100" width="100"/>
+</body>
+</html>

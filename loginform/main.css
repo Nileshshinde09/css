@@ -1,0 +1,93 @@
+.container{
+    margin-right: 15rem;
+    
+    margin-top:5rem;
+    width: 30rem;
+    background-color: rgb(216, 219, 235);
+    height: 35rem;
+    border-radius: 2rem;
+    border: 1px solid black;
+    box-shadow:10px  10px 5px rgb(72, 71, 71);
+}
+
+h1{
+    width: 8rem;
+    margin:auto;
+    margin-top:2rem;
+    height:3rem;
+}
+label{
+    margin: auto;
+    font-size: x-large;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    width: 10rem;
+    display: flex;
+}
+.inputfirst{
+    margin: auto;
+    width: 20rem;
+    display: flex;
+    height: 2rem;
+    border-radius:10px;
+    padding-left: 5px;
+    
+
+}
+.buttonlogin{
+    width: 7rem;
+    height: 2.5rem;
+    border-radius:10px;
+    margin-left: 11rem;
+    margin-top: 2rem;
+    background: rgb(187, 243, 189);
+    box-shadow: 2px 2px 2px;
+
+
+}
+.buttonreset{
+    width: 7rem;
+    height: 2.5rem;
+    border-radius:5px;
+    margin-top:2rem;
+    margin-left: 1rem;
+    background: rgb(249, 177, 170);
+    box-shadow: 2px 2px 2px;
+
+
+}
+button:hover{
+    width: 7.2rem;
+    height: 2.9rem;
+    box-shadow: 3px 3px 3px;
+    position: relative;
+}
+span{
+    font-size:larger;
+    color: green;
+}
+.inputlast{
+    margin-left:5rem;
+    margin-top: 3rem;
+    
+}
+
+.lastrow{
+    display: flex;
+    margin-top: 6rem;
+}
+
+.fpass{
+    margin-top:3rem;
+    margin-left: 1rem;
+}
+
+img{
+    margin: auto;
+    margin-top:5rem;
+    width: 30rem;
+    height: 35rem;
+}
+body{
+    display: flex;
+}

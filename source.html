@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML5 Canvas compositing operations</title>
+    <style>
+        canvas {
+            border: 1px solid brown
+        }
+
+        select {
+            vertical-align: top
+        }
+    </style>
+    <script>
+        var canvas;
+        var ctx;
+        var value = 'source-over';
+        function init() {
+            canvas = document.getElementById('myCanvas');
+            ctx = canvas.getContext('2d');
+            draw();
+        }
+        function getOperation(sel) {
+            value = sel.value;
+            draw();  
+        }
+        function draw() {
+            ctx.save();
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = 'orange';
+            ctx.fillRect(20, 20, 140, 140);
+            ctx.globalCompositeOperation = value;
+            ctx.fillStyle = 'red';
+            ctx.fillRect(35, 35, 140, 140);
+            ctx.restore();
+        }
+    </script>
+</head>
+
+<body onload="init();">
+    <canvas id="myCanvas" width="200" height="200">
+    </canvas>
+    <select onchange="getOperation(this)">
+        <option value="source-over" selected="selected">source-over</option>
+        <option value="source-in">source-in</option>
+        <option value="source-out">source-out</option>
+        <option value="source-atop">source-atop</option>
+        <option value="destination-over">destination-over</option>
+        <option value="destination-in">destination-in</option>
+        <option value="destination-out">destination-out</option>
+        <option value="destination-atop">destination-atop</option>
+        <option value="lighter">lighter</option>
+        <option value="copy">copy</option>
+        <option value="xor">xor</option>
+    </select>
+</body>
+
+</html>

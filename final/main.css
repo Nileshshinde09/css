@@ -1,0 +1,52 @@
+
+h1{
+    width: 15rem;
+    margin: 0 auto;
+    text-shadow: 3px 3px 5px rgb(175, 241, 232);
+}
+
+.logformoutline{
+    width: 28rem;
+    height: 30rem;
+    background-color: rgb(209, 247, 244);
+    border: 2px;
+    border-color: black;
+    box-shadow: 10px 10px 10px black;
+    margin: 3rem auto;
+    border-radius: 15px;
+    padding:15px;
+    
+}
+label{
+    margin:15px auto;
+    width: 6rem;
+    font-size:25px;
+    display: flex;
+}
+input{
+    margin:5px auto;
+    width: 20rem;
+    height: 2rem;
+    border-radius: 4px;
+    padding-left: 10px;
+    display: flex;
+}
+button{
+    background-color: skyblue;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px black;
+    margin: 20px 10rem;
+}
+button:focus{
+    background-color: rgb(90, 123, 136);
+    width: 6.5rem;
+    color: white;
+    position: relative;
+    height: 2.5rem;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px black;
+    margin: 20px 10rem;
+    transition:background-color .5s, width .5s,color .5s;
+}
